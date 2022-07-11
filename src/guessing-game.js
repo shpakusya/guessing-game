@@ -13,12 +13,12 @@ class GuessingGame {
     }
 
     lower() {
-        this.max = this.mid-1
+        this.max = this.mid
         this.mid = Math.ceil((this.max + this.min) / 2)
     }
 
     greater() {
-        this.min = this.mid+1
+        this.min = this.mid
         this.mid = Math.ceil((this.max + this.min) / 2)
     }
 }
